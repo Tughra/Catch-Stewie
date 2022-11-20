@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         print("image tabbed");
     }
     @objc func timeFunction(timer:Timer){
-        var imageView = timer.userInfo as! UIImageView ;
+        let imageView = timer.userInfo as! UIImageView ;
         positionX = Double.random(in: 0.0..<(width-100));
         positionY = Double.random(in: 200.0..<(height-200));
         imageView.frame = CGRect(x: positionX, y: positionY, width: 100, height: 200);
